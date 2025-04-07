@@ -1,4 +1,4 @@
-## Ligand Docking and File Processing Scripts
+# Ligand Docking and File Processing Scripts
 
 This repository contains scripts used for ligand file preparation, docking job automation, file organization, and output parsing. 
 These tools are useful for handling large-scale virtual screening workflows.
