@@ -22,7 +22,7 @@ body {
     margin: 0;
     background: var(--navy);
     color: var(--text);
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -41,14 +41,6 @@ button:focus-visible {
     outline: 3px solid var(--teal);
     outline-offset: 4px;
 }
-
-.skip-link {
-    position: fixed; top: .75rem; left: .75rem; z-index: 2000; padding: .65rem 1rem;
-    border-radius: 8px; background: var(--teal); color: var(--navy); font-weight: 700;
-    text-decoration: none; transform: translateY(-160%); transition: transform .2s ease;
-}
-.skip-link:focus { transform: translateY(0); }
-.site-mark { margin-right: auto; font-size: 1.2rem; font-weight: 800; letter-spacing: .08em; }
 
 .navbar {
     position: fixed;
@@ -177,20 +169,6 @@ h3 {
 .section {
     padding: 6rem 0;
 }
-
-.masters-hero { min-height: 78vh; padding-top: 10rem; }
-.hero-actions, .thesis-actions { display: flex; flex-wrap: wrap; gap: .85rem; }
-.back-link { display: inline-block; margin-bottom: 2rem; color: var(--teal); text-decoration: none; }
-.back-link:hover { text-decoration: underline; }
-.profile-copy { max-width: 880px; margin: 0 auto; }
-.research-figure { margin: 2.75rem 0; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; background: var(--navy); box-shadow: var(--shadow); }
-.research-figure img, .research-figure video { display: block; width: 100%; height: auto; max-height: 76vh; object-fit: contain; border-radius: 6px; background: #071426; }
-.research-figure figcaption { padding: .9rem .25rem .1rem; color: var(--muted); text-align: center; font-size: .95rem; }
-.thesis-actions { justify-content: center; margin: 2.5rem 0 4rem; }
-.funding-panel { margin-top: 4rem; padding: 2rem; border: 1px solid var(--border); border-radius: 12px; background: var(--navy); text-align: center; }
-.funding-panel .eyebrow { margin-bottom: .35rem; font-size: .8rem; }
-.funding-logos { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 2.5rem; margin-top: 1rem; }
-.funding-logos img { width: min(220px, 38vw); height: 80px; object-fit: contain; }
 
 .section-alt {
     background: var(--navy-light);
@@ -762,13 +740,6 @@ footer {
     .capability-column h3 {
         min-height: auto;
     }
-}
-
-@media (max-width: 760px) {
-    .hero-actions, .thesis-actions { flex-direction: column; align-items: stretch; }
-    .hero-actions .hero-link, .thesis-actions .hero-link { text-align: center; }
-    .research-figure { margin: 2rem 0; padding: .6rem; }
-    .funding-panel { padding: 1.4rem 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
